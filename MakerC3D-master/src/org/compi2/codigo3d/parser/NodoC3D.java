@@ -7,7 +7,9 @@ package org.compi2.codigo3d.parser;
  * @author esvux
  */
 public class NodoC3D {
-    private String cad;
+    private String cad, ev, ef, es;
+    private Boolean isAndOr;
+    
 
     public NodoC3D(String cad) {
         this.cad = cad;
@@ -15,6 +17,16 @@ public class NodoC3D {
     
     public String getCad(){
         return cad;
+    }
+    
+    public void getIsAndOr(Boolean flag){
+        this.isAndOr = flag;
+        
+    }
+    
+    public Boolean isFlag(){
+    
+        return isAndOr;
     }
         
 }
